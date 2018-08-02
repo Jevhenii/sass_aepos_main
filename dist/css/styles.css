@@ -322,6 +322,14 @@ h6 {
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+}
+
 .main section {
   margin: 0;
   height: 100vh;
@@ -368,16 +376,7 @@ h6 {
   height: 100%;
 }
 
-* {
-  font-family: 'Roboto Mono', monospace;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5) {
+.page-1 #pagination li:nth-of-type(1), .page-2 #pagination li:nth-of-type(2), .page-3 #pagination li:nth-of-type(3), .page-4 #pagination li:nth-of-type(4), .page-5 #pagination li:nth-of-type(5) {
   transform: scale(2);
 }
 
@@ -536,6 +535,7 @@ body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-typ
   max-width: 674px;
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .widget_nav_menu .menu .menu-item {

@@ -78,14 +78,14 @@
             </div>
         </section>
 
-        <section id="page5 nav_menu-6" class="widget widget_nav_menu">
+        <section id="page5" class="widget widget_nav_menu">
             <div class="menu-main-navigation-container wow fadeInUp">
                 <ul id="menu-main-navigation-1" class="menu">
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9">
-                        <a href="#" itemprop="url"><span>Why did you start AEPoS?</span></a>
+                        <a itemprop="url"><span>Why did you start AEPoS?</span></a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a
-                                    href="#" itemprop="url">
+                                     itemprop="url">
                                 We receive a lot of requests for Ethereum based networks with customizations on the
                                 consensus protocol, throughput and gas modifications and wallet customizations.
                                 Back in October 2017 together with the community of Auxilium, who are the altruistic
@@ -102,10 +102,10 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13">
-                        <a href="#" itemprop="url"> <span>Are you trying to supercede Ethereum?</span></a>
+                        <a  itemprop="url"> <span>Are you trying to supercede Ethereum?</span></a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
-                                    href="#" itemprop="url">
+                                     itemprop="url">
                                 We receive a lot of requests for Ethereum based networks with customizations on the
                                 consensus protocol, throughput and gas modifications and wallet customizations.
                                 Back in October 2017 together with the community of Auxilium, who are the altruistic
@@ -123,10 +123,10 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16">
-                        <a href="#" itemprop="url"><span>How is PoS better than PoW?</span></a>
+                        <a itemprop="url"><span>How is PoS better than PoW?</span></a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
-                                    href="#" itemprop="url">
+                                    itemprop="url">
                                 We receive a lot of requests for Ethereum based networks with customizations on the
                                 consensus protocol, throughput and gas modifications and wallet customizations.
                                 Back in October 2017 together with the community of Auxilium, who are the altruistic
@@ -143,10 +143,10 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16">
-                        <a href="#" itemprop="url"><span>Why have you chosen PoS over DPoS?</span></a>
+                        <a itemprop="url"><span>Why have you chosen PoS over DPoS?</span></a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
-                                    href="#" itemprop="url">
+                                     itemprop="url">
                                 We receive a lot of requests for Ethereum based networks with customizations on the
                                 consensus protocol, throughput and gas modifications and wallet customizations.
                                 Back in October 2017 together with the community of Auxilium, who are the altruistic
@@ -163,10 +163,10 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16">
-                        <a href="#" itemprop="url"><span>What are the current issues with the </span></a>
+                        <a  itemprop="url"><span>What are the current issues with the </span></a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
-                                    href="#" itemprop="url">
+                                    itemprop="url">
                                 We receive a lot of requests for Ethereum based networks with customizations on the
                                 consensus protocol, throughput and gas modifications and wallet customizations.
                                 Back in October 2017 together with the community of Auxilium, who are the altruistic
@@ -204,7 +204,7 @@
 </main>
 
 <!-- SCRIPTS -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
 <script>new WOW().init();</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -242,7 +242,8 @@
     $(document).on('click', 'a[href^="#"]', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top,
+            // scrollTop: $($.attr(this, 'href')).offset().top,
+            scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
 
